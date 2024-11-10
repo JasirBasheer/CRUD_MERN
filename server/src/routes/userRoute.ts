@@ -8,11 +8,15 @@ const router = express.Router();
 dotenv.config();
 
 router.get('/user-details',getUserDetails)
-router.patch('/edit-profile',editUser)
 
 router.post('/login',login);
+
 router.post('/register',register);
+
 router.post('/verify-token',verifyToken)
+
 router.post('/refresh-token',refreshToken)
+
+router.patch('/edit-profile',editUser)
 
 export default router;
